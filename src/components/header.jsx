@@ -46,27 +46,39 @@ const Header = () => {
 
       {/* Мобильное меню */}
       {menuOpen && (
-        <div className="mobile-menu">
-          <div className="menu-header">
-            <h2>Меню</h2>
-            <button onClick={() => setMenuOpen(false)} className="close-btn">
-              ✕
-            </button>
-          </div>
-          <nav className="menu-nav">
-            <a href="#about">(01) О нас</a>
-            <a href="#services">(02) Услуги</a>
-            <a href="#case">(03) Кейс</a>
-            <a href="#how">(04) Как мы работаем</a>
-            <a href="#review">(05) Отзыв</a>
-            <a href="#contacts">(06) Контакты</a>
-          </nav>
-          <div className="menu-footer">
-            <p>Политика конфиденциальности</p>
-            <p>Условия использования</p>
-          </div>
-        </div>
-      )}
+  <>
+  {/* Overlay */}
+  <div
+    className={`menu-overlay ${menuOpen ? "show" : ""}`}
+    onClick={() => setMenuOpen(false)}
+  ></div>
+
+  {/* Мобильное меню */}
+  <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+    <div className="menu-header">
+      <h2>Меню</h2>
+      <button onClick={() => setMenuOpen(false)} className="close-btn">
+        ✕
+      </button>
+    </div>
+    <nav className="menu-nav">
+      <a href="#about">(01) О нас</a>
+      <a href="#services">(02) Услуги</a>
+      <a href="#case">(03) Кейс</a>
+      <a href="#how">(04) Как мы работаем</a>
+      <a href="#review">(05) Отзыв</a>
+      <a href="#contacts">(06) Контакты</a>
+    </nav>
+    <div className="menu-footer">
+      <p>Политика конфиденциальности</p>
+      <p>Условия использования</p>
+    </div>
+  </div>
+</>
+
+)}
+
+
     </header>
   );
 };

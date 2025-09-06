@@ -1,4 +1,6 @@
 import React from "react";
+import ServiceButton from "../components/intro-button"
+
 export default function Intro() {
    return (
       <div id="intro">
@@ -9,14 +11,16 @@ export default function Intro() {
             <p>Разрабатываем сайты, интернет-магазины, маркетплейсы и проектируем удобные интерфейсы для приложений и SaaS-платформ.</p>
             <a href="#">Обсудить проект <img src="./img/link.svg" alt="" /></a>
           </div>
+
           <div className="services-btns">
-            <a href="#">Многостраничный сайт<img src="./img/multipage.png" alt="" /></a>
-            <a href="#">Интернет-магазины<img src="./img/shop.png" alt="" /></a>
-            <a href="#">Маркетплейсы<img src="./img/marketplace.png" alt="" /></a>
-            <a href="#">Лендинг<img src="./img/landing.png" alt="" /></a>
-            <a href="#">Корпоративные сайты<img src="./img/cor.png" alt="" /></a>
-            <a href="#">Продуктовый дизайн<img src="./img/design.png" alt="" /></a>
+            <ServiceButton href="#" text="Многостраничный сайт" icon="./img/multipage.png" />
+            <ServiceButton href="#" text="Интернет-магазины" icon="./img/shop.png" />
+            <ServiceButton href="#" text="Маркетплейсы" icon="./img/marketplace.png" />
+            <ServiceButton href="#" text="Лендинг" icon="./img/landing.png" />
+            <ServiceButton href="#" text="Корпоративные сайты" icon="./img/cor.png" />
+            <ServiceButton href="#" text="Продуктовый дизайн" icon="./img/design.png" />
           </div>
+
         </div>
       </div>
    );

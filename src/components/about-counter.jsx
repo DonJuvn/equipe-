@@ -27,6 +27,7 @@ const Counter = ({ value, label, duration = 3000 }) => {
         {value.replace(/[0-9]/g, "") /* keep +, %, etc. */}
       </h2>
       <p>{label}</p>
+      <img src="./img/bg.png" alt="" />
     </div>
   );
 };

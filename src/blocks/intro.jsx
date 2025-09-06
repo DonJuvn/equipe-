@@ -1,6 +1,7 @@
 import React from "react";
 import ServiceButton from "../components/intro-button";
 import RevealOnScroll from "../components/reveal";
+import DiscussButton from "../components/discuss";
 
 export default function Intro() {
    return (
@@ -15,13 +16,10 @@ export default function Intro() {
                      проектируем удобные интерфейсы для приложений и
                      SaaS-платформ.
                   </p>
-                  <a href="#">
-                     Обсудить проект <img src="./img/link.svg" alt="" />
-                  </a>
+                  <DiscussButton/>
                </div>
             </RevealOnScroll>
 
-            <RevealOnScroll>
                <div className="services-btns">
                   <ServiceButton
                      href="#"
@@ -54,7 +52,6 @@ export default function Intro() {
                      icon="./img/design.png"
                   />
                </div>
-            </RevealOnScroll>
          </div>
       </div>
    );

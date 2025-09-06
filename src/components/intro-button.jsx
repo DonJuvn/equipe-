@@ -1,13 +1,14 @@
-import React from "react";
+import React from "react";import RevealOnScroll from "./reveal";
 
 const ServiceButton = ({ href, text, icon }) => {
-  return (
-    <a href={href} className="service-btn">
-      {text}
-      <img src={icon} alt={text} />
-    </a>
-  );
+   return (
+      <RevealOnScroll>
+         <a href={href} className="service-btn">
+            {text}
+            <img src={icon} alt={text} />
+         </a>
+      </RevealOnScroll>
+   );
 };
 
 export default ServiceButton;
-   

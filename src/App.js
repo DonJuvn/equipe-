@@ -3,12 +3,14 @@ import "./App.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Intro from "./blocks/intro";
+import AboutUs from "./blocks/about";
 
 function App() {
    return (
       <>
          <Header />
          <Intro />
+         <AboutUs />
          <Footer />
       </>
    );

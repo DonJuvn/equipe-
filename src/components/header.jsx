@@ -63,27 +63,27 @@ const Header = () => {
                         </button>
                      </div>
                      <nav className="menu-nav">
-                        <div className="navigation">
+                        <div onClick={() => setMenuOpen(false)} className="navigation">
                            <a id="span">(01)</a>
                            <a href="#about">О нас</a>
                         </div>
-                        <div className="navigation">
+                        <div onClick={() => setMenuOpen(false)} className="navigation">
                            <a id="span">(02)</a>
                            <a href="#services">Услуги</a>
                         </div>
-                        <div className="navigation">
+                        <div onClick={() => setMenuOpen(false)} className="navigation">
                            <a id="span">(03)</a>
                            <a href="#case">Кейс</a>
                         </div>
-                        <div className="navigation">
+                        <div onClick={() => setMenuOpen(false)} className="navigation">
                            <a id="span">(04)</a>
                            <a href="#how">Как мы работаем</a>
                         </div>
-                        <div className="navigation">
+                        <div onClick={() => setMenuOpen(false)} className="navigation">
                            <a id="span">(05)</a>
                            <a href="#review">Отзыв</a>
                         </div>
-                        <div className="navigation">
+                        <div onClick={() => setMenuOpen(false)} className="navigation">
                            <a id="span">(06)</a>
                            <a href="#contacts">Контакты</a>
                         </div>

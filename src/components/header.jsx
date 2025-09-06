@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 const Header = () => {
    const [menuOpen, setMenuOpen] = useState(false);
    const [hidden, setHidden] = useState(false);
@@ -7,11 +8,9 @@ const Header = () => {
    useEffect(() => {
       const handleScroll = () => {
          if (window.scrollY > lastScrollY) {
-            // скролл вниз → скрыть хедер
-            setHidden(true);
+            setHidden(true); // scroll down → hide header-inner
          } else {
-            // скролл вверх → показать хедер
-            setHidden(false);
+            setHidden(false); // scroll up → show header-inner
          }
          setLastScrollY(window.scrollY);
       };
@@ -21,9 +20,9 @@ const Header = () => {
    }, [lastScrollY]);
 
    return (
-      <header id="header" className={hidden ? "header hidden" : "header"}>
+      <header id="header" className="header">
          <div className="container">
-            <div className="header-inner">
+            <div className={`header-inner ${hidden ? "hidden" : ""}`}>
                <div className="logo">
                   <img src="img/logo.svg" alt="Equipe" />
                </div>
@@ -43,16 +42,15 @@ const Header = () => {
             </div>
          </div>
 
-         {/* Мобильное меню */}
+         {/* Overlay (independent from header-inner) */}
          {menuOpen && (
             <>
-               {/* Overlay */}
                <div
                   className={`menu-overlay ${menuOpen ? "show" : ""}`}
                   onClick={() => setMenuOpen(false)}
                ></div>
 
-               {/* Мобильное меню */}
+               {/* Mobile menu */}
                <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
                   <div className="container">
                      <div className="menu-header">

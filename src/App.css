@@ -53,6 +53,11 @@ button {
    align-items: center;
    padding: 15px;
 }
+.header-inner .right{
+   display: flex;
+   flex-direction: row;
+   gap: 0.75vw;
+}
 
 .header .project-btn {
    background-color: #4989f1;
@@ -60,12 +65,13 @@ button {
    font-family: "Manrope", sans-serif;
    color: #fff;
    text-decoration: none;
-   padding: 4px 20px;
+   padding: 8px 20px;
    font-size: 18px;
+   font-weight: 200;
 }
 .header .menu-btn {
    background-color: #19191a;
-   padding: 4px 2px 4px 16px;
+   padding: 8px 2px 8px 16px;
    border: none;
    border-radius: 30px;
    color: #fff;
@@ -73,12 +79,14 @@ button {
    cursor: pointer;
    text-align: center;
    font-size: 18px;
+   font-weight: 200;
 }
 
 .header .menu-btn span {
    background-color: #4989f1;
    border-radius: 100%;
-   padding: 2px 6px;
+   padding: 6px 10px;
+   margin-left: 5px;
 }
 
 /* overlay */

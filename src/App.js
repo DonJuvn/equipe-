@@ -6,6 +6,7 @@ import Intro from "./blocks/intro";
 import AboutUs from "./blocks/about";
 import Services from "./blocks/services";
 import Cases from "./blocks/cases";
+import Process from "./blocks/process";
 
 function App() {
    return (
@@ -15,6 +16,7 @@ function App() {
          <AboutUs />
          <Services />
          <Cases />
+         <Process />
          <Footer />
       </>
    );

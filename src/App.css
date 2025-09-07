@@ -229,9 +229,9 @@ button {
    margin: 0;
    font-family: "Manrope", sans-serif;
    aspect-ratio: 1;
-   transition: .2s;
+   transition: 0.2s;
 }
-.close-btn:hover{
+.close-btn:hover {
    background-color: #4989f1;
 }
 
@@ -256,7 +256,7 @@ button {
    color: #fff;
    align-items: flex-start;
    display: flex;
-   transition: .15s transform ease-in-out;
+   transition: 0.15s transform ease-in-out;
    transform: translateY(0);
 }
 .menu-nav #span {
@@ -266,7 +266,7 @@ button {
 .menu-nav a:hover {
    transform: translateY(-8px);
 }
-.menu-nav a span:hover{
+.menu-nav a span:hover {
    transform: translateY(0px);
    cursor: pointer;
 }
@@ -644,12 +644,12 @@ button {
 }
 .case .tablet {
    background-color: #232324;
-   border-radius: 30px;   
+   border-radius: 30px;
    padding: 1.75vh 0 2vh;
    margin-top: 2vh;
-   transition: .3s;
+   transition: 0.3s;
 }
-.case .tablet .container{
+.case .tablet .container {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -676,12 +676,80 @@ button {
    line-height: 100%;
    letter-spacing: 0%;
 }
-#cases a:hover .tablet{
+#cases a:hover .tablet {
    background-color: #ffffff;
 }
-#cases a:hover .tablet h1{
+#cases a:hover .tablet h1 {
    color: #4989f1;
 }
-#cases a:hover .tablet p{
+#cases a:hover .tablet p {
    color: #2b2b2c;
+}
+
+/* PROCESS */
+#process {
+   padding-top: 8vh;
+}
+.phases {
+   margin-top: 4vh;
+   height: 1100px;
+   overflow-y: scroll;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   scrollbar-width: none;
+}
+.phases .phase {
+   height: 1100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2vh;
+   width: 70vw;
+   margin: auto;
+   /* border: 1px solid red ; */
+}
+.phase .tablet {
+   display: flex;
+   flex-direction: row;
+   gap: 1vw;
+   align-items: center;
+   margin: 0 auto;
+}
+.phase .tablet p {
+   color: #ffffff;
+   background-color: #232324;
+   padding: 15px 22px;
+   border-radius: 30px;
+}
+.phase h1 {
+   color: #fff;
+   font-family: Manrope;
+   font-weight: 500;
+   font-style: Medium;
+   font-size: 60px;
+   line-height: 100%;
+   letter-spacing: 0px;
+   text-align: center;
+   vertical-align: bottom;
+}
+.phase #description {
+   color: #ffffff60;
+   font-family: Manrope;
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 18px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   text-align: center;
+   vertical-align: bottom;
+}
+.phases .reveal {
+   opacity: 0;
+   transform: translateY(200px);
+   transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.phases .reveal.visible {
+   opacity: 1;
+   transform: translateY(0);
 }

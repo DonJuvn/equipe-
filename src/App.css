@@ -22,6 +22,7 @@ p,
 a {
    margin: 0;
    font-family: "Manrope", sans-serif;
+   text-decoration: none;
 }
 button {
    cursor: pointer;
@@ -339,12 +340,24 @@ button {
    align-items: center;
    display: flex;
    gap: 0.5vw;
-   transition: 0.2s transform ease-in-out;
+   transition: 0.3s ease-in-out;
    font-weight: 200;
 }
 #discuss-button:hover {
-   transform: scale(1.05);
-   /* background-color: #ffffff60; */
+   color: #4989f1;
+   border: 1px solid #fff;
+   background-color: #fff;
+   /* font-weight: 400; */
+   transform: scale(1);
+}
+#blue {
+   display: none;
+}
+#discuss-button:hover #white {
+   display: none;
+}
+#discuss-button:hover #blue {
+   display: block;
 }
 
 #intro .services-btns {
@@ -418,7 +431,7 @@ button {
    flex: 1;
    position: relative;
    overflow: hidden;
-   transition: .3s;
+   transition: 0.3s;
 }
 .counter h2 {
    color: white;
@@ -437,16 +450,16 @@ button {
    letter-spacing: 0%;
    color: #ffffff60;
 }
-.counter img{
+.counter img {
    position: absolute;
    top: 0;
    right: 0;
    display: none;
 }
-.counter:hover{
+.counter:hover {
    background-color: #4989f1;
 }
-.counter:hover img{
+.counter:hover img {
    display: block;
 }
 .reveal {
@@ -508,15 +521,15 @@ button {
    color: #4989f1;
    border: 1px solid #fff;
    background-color: #fff;
-   font-weight: 400;
+   /* font-weight: 400; */
 }
-#blue{
+#blue {
    display: none;
 }
-.service:hover #white{
+.service:hover #white {
    display: none;
 }
-.service:hover #blue{
+.service:hover #blue {
    display: block;
 }
 .service h1 {
@@ -555,4 +568,107 @@ button {
    /* height: 52.6px; */
    aspect-ratio: 1;
    object-fit: contain;
+}
+
+/* CASES */
+#cases {
+   padding-top: 8vh;
+}
+.cases-title {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 4vh;
+}
+.cases {
+   display: flex;
+   flex-direction: row;
+   overflow: hidden; /* hides extra cases */
+   scroll-behavior: smooth; /* smooth movement */
+   gap: 1vw;
+   width: 100%;
+   overflow-x: scroll;
+   scrollbar-width: none;
+   /* padding-left: 5vw;
+   margin-right: 5vw; */
+}
+
+.case {
+   flex: 0 0 auto; /* prevents shrinking, keeps items side by side */
+   width: 44.4vw; /* each case takes full container width */
+}
+.case #pr-img {
+   width: 100%;
+}
+@media screen and (min-width: 1600px) {
+   .case {
+      width: 39.5vw; /* each case takes full container width */
+   }
+}
+#cases .nav-buttons {
+   display: flex;
+   flex-direction: row;
+   gap: 2vw;
+}
+#cases .nav-buttons button {
+   background-color: #232324;
+   border-radius: 30px;
+   aspect-ratio: 1;
+   transform: scale(2);
+   color: #ffffff50;
+   border: none;
+   font-weight: 200;
+   transition: 0.3s;
+}
+#cases .nav-buttons button:hover {
+   color: #fff;
+}
+#cases .nav-buttons button.active {
+   color: #fff;
+   background-color: #4989f1;
+}
+.case .tablet {
+   background-color: #232324;
+   border-radius: 30px;   
+   padding: 1.75vh 0 2vh;
+   margin-top: 2vh;
+   transition: .3s;
+}
+.case .tablet .container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 94%;
+}
+.case .tablet h1 {
+   font-family: Manrope;
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 24px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: #fff;
+   text-decoration: none;
+   margin: 0 0 1.25vh 0;
+}
+.case .tablet p {
+   color: #ffffff60;
+   font-family: Manrope;
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 18px;
+   line-height: 100%;
+   letter-spacing: 0%;
+}
+#cases a:hover .tablet{
+   background-color: #ffffff;
+}
+#cases a:hover .tablet h1{
+   color: #4989f1;
+}
+#cases a:hover .tablet p{
+   color: #2b2b2c;
 }

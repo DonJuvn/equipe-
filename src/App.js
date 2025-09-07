@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Intro from "./blocks/intro";
 import AboutUs from "./blocks/about";
 import Services from "./blocks/services";
+import Cases from "./blocks/cases";
 
 function App() {
    return (
@@ -13,6 +14,7 @@ function App() {
          <Intro />
          <AboutUs />
          <Services />
+         <Cases />
          <Footer />
       </>
    );

@@ -229,6 +229,10 @@ button {
    margin: 0;
    font-family: "Manrope", sans-serif;
    aspect-ratio: 1;
+   transition: .2s;
+}
+.close-btn:hover{
+   background-color: #4989f1;
 }
 
 .menu-nav {
@@ -252,10 +256,19 @@ button {
    color: #fff;
    align-items: flex-start;
    display: flex;
+   transition: .15s transform ease-in-out;
+   transform: translateY(0);
 }
 .menu-nav #span {
    color: #ffffff60;
    font-size: 18px;
+}
+.menu-nav a:hover {
+   transform: translateY(-8px);
+}
+.menu-nav a span:hover{
+   transform: translateY(0px);
+   cursor: pointer;
 }
 .menu-footer {
    bottom: 4vh;

@@ -620,12 +620,12 @@ button {
       width: 39.5vw; /* each case takes full container width */
    }
 }
-#cases .nav-buttons {
+.nav-buttons {
    display: flex;
    flex-direction: row;
    gap: 2vw;
 }
-#cases .nav-buttons button {
+.nav-buttons button {
    background-color: #232324;
    border-radius: 30px;
    aspect-ratio: 1;
@@ -635,10 +635,10 @@ button {
    font-weight: 200;
    transition: 0.3s;
 }
-#cases .nav-buttons button:hover {
+.nav-buttons button:hover {
    color: #fff;
 }
-#cases .nav-buttons button.active {
+.nav-buttons button.active {
    color: #fff;
    background-color: #4989f1;
 }
@@ -696,11 +696,13 @@ button {
    overflow-y: scroll;
    display: flex;
    flex-direction: column;
+   gap: 200px;
    text-align: center;
    scrollbar-width: none;
+   justify-content: space-around;
 }
 .phases .phase {
-   height: 1100px;
+   height: 800px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -752,4 +754,90 @@ button {
 .phases .reveal.visible {
    opacity: 1;
    transform: translateY(0);
+}
+
+/* FEEDBACKS */
+#feedbacks {
+   padding-top: 8vh;
+}
+.feedback {
+   flex: 0 0 auto; /* prevents shrinking, keeps items side by side */
+   width: 29.2vw;
+   height: fit-content;
+   min-height: 280px;
+   max-height: fit-content;
+   border-radius: 30px;
+   background-color: #232324;
+}
+@media screen and (min-width: 1600px) {
+   .feedback {
+      width: 26vw; /* each case takes full container width */
+   }
+}
+.feedback .container {
+   padding: 2vh 0;
+   height: 300px;
+   max-height: fit-content;
+}
+.feedback .header-fb {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 0.5vw;
+}
+.header-fb .rating {
+   display: flex;
+   flex-direction: row;
+   gap: 0.25vw;
+   align-items: center;
+   background-color: #2b2b2c;
+   border-radius: 30px;
+   padding: 5px 10px;
+}
+#rating {
+   font-family: Manrope;
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 18px;
+   line-height: 100%;
+   color: #fff;
+   letter-spacing: 0%;
+}
+.header-fb .info{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5vh;
+}
+.header-fb .info h1 {
+   font-family: Manrope;
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 18px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: #fff;
+}
+.header-fb .info p{
+   font-family: Manrope;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 100%;
+color: #ffffff60;
+letter-spacing: 0%;
+}
+.feedback #desc{
+   font-family: Manrope;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 150%;
+color: #fff;
+letter-spacing: 100%;
+margin-top: 2vh;
+}
+
+#footer {
+   height: 100vh;
 }

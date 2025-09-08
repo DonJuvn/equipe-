@@ -82,12 +82,33 @@ button {
    width: fit-content;
    border-radius: 20px;
 }
-.blue-point {
+/* .blue-point {
    width: 12px;
    height: 12px;
    border-radius: 12px;
    background-color: #4989f1;
+} */
+.blue-point {
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background-color: #4989f1;
+   animation: blink 1s infinite;
 }
+
+@keyframes blink {
+   0%,
+   100% {
+      opacity: 1;
+   }
+   50% {
+      opacity: 0;
+   }
+}
+/* @keyframes blink {
+   0%, 100% { background-color: #4989f1; }
+   50% { background-color: transparent; }
+} */
 
 /* Header */
 #header {
@@ -111,7 +132,7 @@ button {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 15px;
+   padding: 15px 0;
    /* background-color: #ffffff60; */
 }
 .header-inner .right {
@@ -804,7 +825,7 @@ button {
    color: #fff;
    letter-spacing: 0%;
 }
-.header-fb .info{
+.header-fb .info {
    display: flex;
    flex-direction: column;
    gap: 0.5vh;
@@ -818,26 +839,48 @@ button {
    letter-spacing: 0%;
    color: #fff;
 }
-.header-fb .info p{
+.header-fb .info p {
    font-family: Manrope;
-font-weight: 400;
-font-style: Regular;
-font-size: 14px;
-line-height: 100%;
-color: #ffffff60;
-letter-spacing: 0%;
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 14px;
+   line-height: 100%;
+   color: #ffffff60;
+   letter-spacing: 0%;
 }
-.feedback #desc{
+.feedback #desc {
    font-family: Manrope;
-font-weight: 400;
-font-style: Regular;
-font-size: 18px;
-line-height: 150%;
-color: #fff;
-letter-spacing: 100%;
-margin-top: 2vh;
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 18px;
+   line-height: 150%;
+   color: #fff;
+   letter-spacing: 100%;
+   margin-top: 2vh;
 }
 
 #footer {
-   height: 100vh;
+   padding: 8vh 0 4vh;
+}
+#footer .logo {
+   border-bottom: 1px solid #2b2b2c;
+   padding-bottom: 1.5vh;
+}
+.logo img {
+   width: 10vw;
+}
+.footer {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: space-between;
+   margin-top: 4vh;
+}
+.footer p {
+   color: #ffffff;
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.24px;
 }

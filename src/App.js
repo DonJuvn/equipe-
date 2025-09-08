@@ -8,7 +8,7 @@ import Services from "./blocks/services";
 import Cases from "./blocks/cases";
 import Process from "./blocks/process";
 import Feedbacks from "./blocks/feedbacks";
-import ContactForm from "./components/form";
+import Application from "./blocks/application";
 
 function App() {
    return (
@@ -20,7 +20,7 @@ function App() {
          <Cases />
          <Process />
          <Feedbacks />
-         <ContactForm />
+         <Application />
          <Footer />
       </>
    );

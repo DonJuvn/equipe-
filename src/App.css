@@ -82,12 +82,6 @@ button {
    width: fit-content;
    border-radius: 20px;
 }
-/* .blue-point {
-   width: 12px;
-   height: 12px;
-   border-radius: 12px;
-   background-color: #4989f1;
-} */
 .blue-point {
    width: 12px;
    height: 12px;
@@ -859,13 +853,75 @@ button {
    margin-top: 2vh;
 }
 
+/* APPLICATION */
+#application {
+   padding-top: 8vh;
+}
+.application {
+   margin-top: 4vh;
+   display: flex;
+   flex-direction: row;
+   gap: 1vw;
+}
+#soc-media {
+   background-color: #232324;
+   width: 44.5vw;
+   border-radius: 30px;
+   position: relative;
+   overflow: hidden;
+}
+#soc-media .container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+}
+#soc-media .logo {
+   margin-top: 5vh;
+   display: flex;
+   flex-direction: column;
+   gap: 2vh;
+   width: 50%;
+}
+#soc-media p {
+   font-family: Manrope;
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 20px;
+   leading-trim: NONE;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: #ffffff60;
+}
+#soc-media .media{
+   display: flex;
+   flex-direction: column;
+   gap: 1.5vh;
+   margin-bottom: 5vh;
+}
+#soc-media .title{
+   background-color: #2B2B2C;
+   transition: .3s ;
+}
+#soc-media .title:hover{
+   background-color: #4989F1;
+}
+#soc-media .title:hover .blue-point{
+   background-color: #fff;
+   animation: none;
+}
+#soc-media #group{
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
 /* Form0 */
 #form {
    background-color: #232324;
    padding: 3vh 0;
    width: 44.5vw;
    border-radius: 30px;
-   margin-left: 5vw;
 }
 #form .container {
    width: 90%;
@@ -895,12 +951,16 @@ button {
    border: none;
    border-radius: 30px;
 }
-#form form input{
+#form form input {
    margin: 0 2vh;
    background-color: transparent;
    border: none;
    font-family: "Manrope", sans-serif;
    font-size: 16px;
+   width: 90%;
+   border: none;
+   outline: none;
+   color: #fff;
 }
 #form button {
    width: 100%;

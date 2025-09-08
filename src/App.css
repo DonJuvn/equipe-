@@ -859,6 +859,67 @@ button {
    margin-top: 2vh;
 }
 
+/* Form0 */
+#form {
+   background-color: #232324;
+   padding: 3vh 0;
+   width: 44.5vw;
+   border-radius: 30px;
+   margin-left: 5vw;
+}
+#form .container {
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   gap: 4vh;
+}
+#form h2 {
+   color: #ffffff;
+   font-family: Manrope;
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 36px;
+   line-height: 135%;
+   letter-spacing: 0%;
+   width: 90%;
+}
+#form form {
+   display: flex;
+   flex-direction: column;
+   gap: 1.25vh;
+}
+#form form div {
+   background-color: #2b2b2c;
+   padding: 2vh 0;
+   width: 100%;
+   border: none;
+   border-radius: 30px;
+}
+#form form input{
+   margin: 0 2vh;
+   background-color: transparent;
+   border: none;
+   font-family: "Manrope", sans-serif;
+   font-size: 16px;
+}
+#form button {
+   width: 100%;
+   border-radius: 30px;
+   background-color: #4989f1;
+   color: #fff;
+   font-family: "Manrope", sans-serif;
+   font-weight: 200;
+   font-style: Regular;
+   font-size: 18px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   text-align: center;
+   padding: 2vh 0;
+   margin-top: 1vh;
+   border: none;
+}
+
+/* FOOTE0R */
 #footer {
    padding: 8vh 0 4vh;
 }

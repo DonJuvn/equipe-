@@ -47,7 +47,7 @@ export default function Feedbacks() {
 
    const containerRef = useRef(null);
 
-   const scrollAmount = 700; // px per click
+   const scrollAmount = 480; // px per click
 
    const onPrev = () => {
       containerRef.current.scrollBy({

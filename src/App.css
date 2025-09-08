@@ -227,6 +227,10 @@ button {
 .mobile-menu .container {
    display: flex;
    flex-direction: column;
+   height: 100%;
+}
+.mobile-menu .reveal.visible{
+   height: 100%;
 }
 .menu-header {
    display: flex;
@@ -234,11 +238,11 @@ button {
    width: 100%;
    justify-content: space-between;
    align-items: center;
-   /* height: 10%; */
 }
 .menu-header h2 {
    font-size: 18px;
    font-weight: 400;
+   width: fit-content;
 }
 .close-btn {
    background-color: #2b2b2c;
@@ -1014,7 +1018,7 @@ button {
 .form-wrapper .container{
    text-align: center;
 }
-.close-btn {
+.form-wrapper .close-btn {
   position: absolute;
   top: 2vh;
   right: 2vh;

@@ -12,14 +12,14 @@ import Process from "./blocks/process";
 import Feedbacks from "./blocks/feedbacks";
 import Application from "./blocks/application";
 import Form from "./blocks/contactform";
+import MobileMenu from "./blocks/mobile-menu"; // added here
 
 function App() {
    const [isContactOpen, setContactOpen] = useState(false);
    const [isMenuOpen, setMenuOpen] = useState(false);
 
    function openContactForm() {
-       setContactOpen(!isContactOpen);
-       console.log("worked");
+      setContactOpen(true);
    }
    const closeContactForm = () => setContactOpen(false);
 
@@ -35,8 +35,7 @@ function App() {
       <>
          <Header
             onDiscussClick={openContactForm}
-            menuOpen={isMenuOpen}
-            onMenuToggle={() => setMenuOpen(!isMenuOpen)}
+            onMenuToggle={openMenu}
          />
          <Intro onDiscussClick={openContactForm} />
          <AboutUs />
@@ -52,9 +51,13 @@ function App() {
             <div className="overlay show" onClick={closeAll}></div>
          )}
 
-         {(isContactOpen) && (
-         <Form isOpen={isContactOpen} onClose={closeContactForm} />
-      )}
+         {isContactOpen && (
+            <Form isOpen={isContactOpen} onClose={closeContactForm} />
+         )}
+
+         {isMenuOpen && (
+            <MobileMenu isOpen={isMenuOpen} onClose={closeMenu} />
+         )}
       </>
    );
 }

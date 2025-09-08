@@ -114,12 +114,16 @@ button {
    transition: transform 0.3s ease;
    z-index: 2;
    padding: 2vh 0;
-   align-items: center;
    display: flex;
+   align-items: center;
 }
 
 #header.hidden {
    transform: translateY(-100%);
+}
+#header.scrolled {
+  background: rgba(25, 25, 26, 0.9); /* dark bg when visible after scroll */
+  backdrop-filter: blur(8px);         /* optional glass effect */
 }
 
 .header-inner {

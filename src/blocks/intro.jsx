@@ -3,7 +3,7 @@ import ServiceButton from "../components/intro-button";
 import RevealOnScroll from "../components/reveal";
 import DiscussButton from "../components/discuss";
 
-export default function Intro() {
+export default function Intro({ onDiscussClick}) {
    return (
       <div id="intro">
          <div className="bottom-blur"></div>
@@ -16,7 +16,7 @@ export default function Intro() {
                      проектируем удобные интерфейсы для приложений и
                      SaaS-платформ.
                   </p>
-                  <DiscussButton/>
+                  <DiscussButton onDiscussClick={onDiscussClick}/>
                </div>
             </RevealOnScroll>
 

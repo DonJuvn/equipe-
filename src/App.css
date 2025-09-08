@@ -112,7 +112,7 @@ button {
    width: 100%;
    color: white;
    transition: transform 0.3s ease;
-   z-index: 1000;
+   z-index: 2;
    padding: 2vh 0;
    align-items: center;
    display: flex;
@@ -135,15 +135,26 @@ button {
    gap: 0.75vw;
 }
 
-.header .project-btn {
+.header #discuss-button {
    background-color: #4989f1;
    border-radius: 30px;
    font-family: "Manrope", sans-serif;
    color: #fff;
+   border: none;
+   padding: 8px 16px;
    text-decoration: none;
-   padding: 8px 20px;
    font-size: 18px;
    font-weight: 200;
+   transition: .3s transform ease-in-out;
+}
+.header #discuss-button img{
+   width: 0;
+}
+.header #discuss-button:hover{
+   background-color: #4989f1;
+   color: #fff;
+   border: none;
+   transform: scale(1.05);
 }
 .header .menu-btn {
    background-color: #19191a;
@@ -165,26 +176,23 @@ button {
    margin-left: 5px;
 }
 
-/* overlay */
-.menu-overlay {
+
+/* OVERLAY */
+.overlay {
    position: fixed;
+   top: 0;
+   left: 0;
    width: 100vw;
    height: 100vh;
-   top: 0;
-   background-color: rgba(0, 0, 0, 0); /* изначально прозрачный */
-   opacity: 0;
-   pointer-events: none; /* нельзя кликнуть */
-   /* transition: opacity 0.6s ease; */
-   z-index: 99;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 5;
+   transition: opacity 0.3s ease-in-out;
+   opacity: 1;
 }
 
-.menu-overlay.show {
-   background-color: rgba(0, 0, 0, 0.5);
-   opacity: 1;
-   pointer-events: auto; /* можно кликнуть */
-}
-.menu-overlay:hover {
-   cursor: pointer;
+.overlay.hidden {
+   opacity: 0;
+   pointer-events: none;
 }
 
 /* меню */
@@ -198,7 +206,7 @@ button {
    background: #1e1e1e;
    color: white;
    padding: 4vh 0;
-   z-index: 100;
+   z-index: 6;
 
    transform: translateX(100%);
    opacity: 0; /* hidden by default */
@@ -361,6 +369,7 @@ button {
    text-decoration: none;
    color: #fff;
    border-radius: 30px;
+   font-size: 18px;
    padding: 5px 5px 5px 1vw;
    border: 1px #fff solid;
    width: fit-content;
@@ -368,6 +377,8 @@ button {
    align-items: center;
    display: flex;
    gap: 0.5vw;
+   font-family: 'Manrope', sans-serif;
+   background-color: transparent;
    transition: 0.3s ease-in-out;
    font-weight: 200;
 }
@@ -978,6 +989,42 @@ button {
    margin-top: 1vh;
    border: none;
 }
+.full-page-form {
+  position: fixed;       /* cover entire screen */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;         /* higher than overlay */
+}
+
+.form-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #232324;
+  padding: 4vh 0;
+  border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  width: 44.5vw;
+}
+.form-wrapper .container{
+   text-align: center;
+}
+.close-btn {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #2B2B2C;
+}
+
 
 /* FOOTE0R */
 #footer {

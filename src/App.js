@@ -39,7 +39,7 @@ function App() {
          />
          <Intro onDiscussClick={openContactForm} />
          <AboutUs />
-         <Services />
+         <Services onDiscussClick={openContactForm} />
          <Cases />
          <Process />
          <Feedbacks />

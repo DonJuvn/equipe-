@@ -1,7 +1,7 @@
 import React from "react";import DiscussButton from "./discuss";
 import RevealOnScroll from "./reveal";
 
-const Service = ({ title, text, price, img }) => {
+const Service = ({ title, text, price, img, onDiscussClick }) => {
    return (
       <RevealOnScroll>
          <div className="service">
@@ -13,7 +13,7 @@ const Service = ({ title, text, price, img }) => {
                <p id="price">{price}</p>
                <div className="button">
                   <img src={img} alt="" />
-                  <DiscussButton />
+                  <DiscussButton onDiscussClick={onDiscussClick} />
                </div>
             </div>
          </div>

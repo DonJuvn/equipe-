@@ -1430,3 +1430,23 @@ button {
    line-height: 24px;
    letter-spacing: -0.24px;
 }
+
+@media screen and (max-width: 768px) {
+   #footer {
+      padding: 6vh 0 2vh;
+   }
+   #footer .logo {
+      padding-bottom: 1vh;
+   }
+   .logo img {
+      width: 25vw;
+   }
+   .footer {
+      flex-direction: column;
+      margin-top: 2vh;
+   }
+   .footer p {
+      font-size: 12px;
+      line-height: 24px;
+   }
+}

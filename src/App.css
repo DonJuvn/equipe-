@@ -90,6 +90,18 @@ button {
    animation: blink 1s infinite;
 }
 
+@media screen and (max-width: 768px) {
+   .title {
+      font-size: 14px;
+      padding: 8px 12.4px;
+      gap: 8px;
+   }
+   .blue-point {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+   }
+}
 @keyframes blink {
    0%,
    100% {
@@ -507,7 +519,7 @@ button {
    #intro {
       border-radius: 0 0 30px 30px;
    }
-   #intro::before{
+   #intro::before {
       background-position: right;
    }
    #intro .center {
@@ -520,7 +532,7 @@ button {
    }
    #intro .center p {
       font-size: 14px;
-      margin: 1em ;
+      margin: 1em;
    }
    #discuss-button {
       font-size: 16px;
@@ -555,7 +567,7 @@ button {
       font-size: 12px;
       font-weight: 300;
    }
-   #intro .services-btns a img{
+   #intro .services-btns a img {
       width: 20px;
    }
 }
@@ -626,6 +638,39 @@ button {
 .reveal.visible {
    opacity: 1;
    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+   #about {
+      padding-top: 4vh;
+   }
+   #about h1 {
+      font-size: 24px;
+      line-height: 150%;
+      margin: 2vh 0;
+   }
+   .about {
+      flex-direction: column;
+      gap: 1vh;
+   }
+   .counter {
+      width: 100%;
+      padding: 20px 0;
+   }
+   .counter h2 {
+      font-size: 40px;
+      margin: 0 0 1.25vh 30px;
+   }
+   .counter p {
+      font-size: 14px;
+      margin: 0 0 0 30px;
+   }
+   .counter:hover {
+      background-color: #232324;
+   }
+   .counter:hover img {
+      display: none;
+   }
 }
 
 /* SERVICES */

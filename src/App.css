@@ -99,7 +99,6 @@ button {
    .blue-point {
       width: 9px;
       height: 9px;
-      border-radius: 50%;
    }
 }
 @keyframes blink {
@@ -768,6 +767,68 @@ button {
    /* height: 52.6px; */
    aspect-ratio: 1;
    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+   #services {
+      padding-top: 4vh;
+   }
+   #services .container {
+      height: fit-content;
+      min-height: fit-content;
+   }
+   .services {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      margin-top: 2vh;
+   }
+   .service {
+      width: 100%;
+      max-width: fit-content;
+      min-width: fit-content;
+      height: fit-content;
+      padding: 20px 0;
+      aspect-ratio: 1.75;
+   }
+   .service:hover {
+      background-color: #232324;
+   }
+   .service:hover #discuss-button {
+      color: #fff;
+      border: 1px solid #fff;
+      background-color: transparent;
+      /* font-weight: 400; */
+   }
+   #blue {
+      display: none;
+   }
+   .service:hover #white {
+      display: block;
+   }
+   .service:hover #blue {
+      display: none;
+   }
+   .service h1 {
+      font-size: 24px;
+      line-height: 150%;
+      margin: 0;
+   }
+   .service p {
+      font-size: 16px;
+      line-height: 130%;
+      margin: 0.3vh 0;
+   }
+   .service #price {
+      font-size: 20px;
+      margin: 2vh 0 4vh;
+   }
+   .service .button {
+      gap: 2vw;
+   }
+   .service .button img {
+      width: 45px;
+   }
 }
 
 /* CASES */

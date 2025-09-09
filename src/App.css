@@ -364,9 +364,9 @@ button {
    .mobile-menu {
       width: 90vw;
       height: 82vh;
-      max-height: 82vh;
+      max-height: 90vh;
       padding: 4vh 0;
-      margin: 30px;
+      margin: 5vh 5vw;
    }
    .menu-header h2 {
       font-size: 24px;
@@ -1047,6 +1047,37 @@ button {
 .phases .reveal.visible {
    opacity: 1;
    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+   #process {
+      padding-top: 4vh;
+   }
+   .phases {
+      margin-top: 2vh;
+   }
+   .phases .phase {
+      height: 600px;
+      width: 85vw;
+      margin: auto;
+   }
+   .phase .tablet {
+      gap: 1.25vw;
+   }
+   .phase .tablet p {
+      padding: 15px 22px;
+      border-radius: 30px;
+   }
+   .phase .tablet img{
+      width: 48px;
+   }
+   .phase h1 {
+      font-size: 32px;
+   }
+   .phase #description {
+      font-size: 16px;
+      line-height: 120%;
+   }
 }
 
 /* FEEDBACKS */

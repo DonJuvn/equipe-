@@ -503,99 +503,60 @@ button {
    font-weight: 200;
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
    #intro {
       border-radius: 0 0 30px 30px;
    }
+   #intro::before{
+      background-position: right;
+   }
    #intro .center {
-      margin: 12vh auto;
+      margin: 15vh auto;
       width: 100%;
    }
-   #intro .container.reveal.visible.center h1 {
+   #intro .center h1 {
       color: #fff;
       font-size: 24px;
    }
    #intro .center p {
       font-size: 14px;
-      margin: 1em;
+      margin: 1em ;
    }
    #discuss-button {
-      text-decoration: none;
-      color: #fff;
-      border-radius: 30px;
-      font-size: 18px;
-      padding: 5px 5px 5px 1vw;
-      border: 1px #fff solid;
-      width: fit-content;
-      margin: 0 auto;
-      align-items: center;
-      display: flex;
-      gap: 0.5vw;
-      font-family: "Manrope", sans-serif;
-      background-color: transparent;
-      transition: 0.3s ease-in-out;
-      font-weight: 200;
+      font-size: 16px;
+      padding: 2px 2px 2px 4vw;
+      gap: 2vw;
    }
    #discuss-button:hover {
-      color: #4989f1;
-      border: 1px solid #fff;
-      background-color: #fff;
-      /* font-weight: 400; */
+      color: #fff;
+      border: none;
+      background-color: transparent;
       transform: scale(1);
    }
    #blue {
       display: none;
    }
    #discuss-button:hover #white {
-      display: none;
+      display: flex;
    }
    #discuss-button:hover #blue {
-      display: block;
+      display: none;
    }
-
    #intro .services-btns {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      /* position: absolute; */
       margin: 0 auto;
-      width: 57%;
+      width: 95%;
       gap: 0.7vw;
+      margin-top: 30vh;
       justify-content: center;
    }
-   /* #intro .bottom-blur {
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   height: 30vh;
-   z-index: -1;
-
-   backdrop-filter: blur(10px);
-   -webkit-backdrop-filter: blur(10px);
-
-   background: linear-gradient(
-      to top,
-      rgba(255, 255, 255, 0.15) 0%,  
-      rgba(255, 255, 255, 0.10) 25%, 
-      rgba(255, 255, 255, 0.05) 50%, 
-      rgba(255, 255, 255, 0.01) 90%, 
-      rgba(255, 255, 255, 0) 100%    
-   );
-} */
-
    #intro .services-btns a {
-      text-decoration: none;
-      color: #fff;
-      border-radius: 30px;
-      padding: 5px 5px 5px 1vw;
-      border: 1px #fff solid;
-      width: fit-content;
-      align-items: center;
-      display: flex;
-      gap: 0.5vw;
-      transition: 0.2s transform ease-in-out;
-      font-size: 18px;
-      font-weight: 200;
+      padding: 8px 4px 8px 8px;
+      gap: 1vw;
+      font-size: 12px;
+      font-weight: 300;
+   }
+   #intro .services-btns a img{
+      width: 20px;
    }
 }
 
@@ -1054,7 +1015,6 @@ button {
    font-weight: 400;
    font-style: Regular;
    font-size: 20px;
-   leading-trim: NONE;
    line-height: 100%;
    letter-spacing: 0%;
    color: #ffffff60;

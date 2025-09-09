@@ -38,13 +38,13 @@ export default function Intro({ onDiscussClick}) {
                   />
                   <ServiceButton
                      href="#"
-                     text="Лендинг"
-                     icon="./img/landing.png"
+                     text="Корпоративные сайты"
+                     icon="./img/cor.png"
                   />
                   <ServiceButton
                      href="#"
-                     text="Корпоративные сайты"
-                     icon="./img/cor.png"
+                     text="Лендинг"
+                     icon="./img/landing.png"
                   />
                   <ServiceButton
                      href="#"

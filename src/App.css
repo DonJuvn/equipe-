@@ -863,11 +863,6 @@ button {
 .case #pr-img {
    width: 100%;
 }
-@media screen and (min-width: 1600px) {
-   .case {
-      width: 39.5vw; /* each case takes full container width */
-   }
-}
 .nav-buttons {
    display: flex;
    flex-direction: row;
@@ -933,7 +928,57 @@ button {
 #cases a:hover .tablet p {
    color: #2b2b2c;
 }
-
+@media screen and (min-width: 1600px) {
+   .case {
+      width: 39.5vw; /* each case takes full container width */
+   }
+}
+@media screen and (max-width: 768px) {
+   #cases {
+      padding-top: 4vh;
+   }
+   .cases-title {
+      margin-bottom: 2vh;
+   }
+   .cases {
+      gap: 1vw;
+   }
+   .case {
+      width: 89vw; /* each case takes full container width */
+   }
+   .case #pr-img {
+      width: 100%;
+   }
+   .nav-buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 5vw;
+   }
+   .nav-buttons button {
+      transform: scale(1.5);
+   }
+   .case .tablet {
+      border-radius: 30px;
+      padding: 1.5vh 0 1.75vh;
+      margin-top: 2vh;
+   }
+   .case .tablet h1 {
+      font-size: 20px;
+      margin: 0 0 1.25vh 0;
+   }
+   .case .tablet p {
+      font-size: 14px;
+   }
+   #cases a:hover .tablet {
+      background-color: #232324;
+   }
+   #cases a:hover .tablet h1 {
+      color: #fff;
+   }
+   #cases a:hover .tablet p {
+      color: #ffffff50;
+   }
+}
 /* PROCESS */
 #process {
    padding-top: 8vh;

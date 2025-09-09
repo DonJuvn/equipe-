@@ -5,41 +5,19 @@ import Case from "../components/case";
 
 export default function Cases() {
    const [active, setActive] = useState(null);
-
-   const casesData = [
-      {
-         link: "/project-1",
-         img: "/img/netdev.png",
-         title: "Parfoa",
-         type: "E-Shop",
-      },
-      {
-         link: "/project-2",
-         img: "/img/netdev.png",
-         title: "Otpan news",
-         type: "E-commerce",
-      },
-      {
-         link: "/project-3",
-         img: "/img/netdev.png",
-         title: "NetDev.kz",
-         type: "Mobile App",
-      },
-      {
-         link: "/project-4",
-         img: "/img/netdev.png",
-         title: "Another Project",
-         type: "Web App",
-      },
-   ];
-
    const containerRef = useRef(null);
 
-   const scrollAmount = 700; // px per click
+   // function to get scroll length based on screen width
+   const getScrollAmount = () => {
+      if (window.innerWidth <= 768) {
+         return 386.125; // smaller scroll for mobile
+      }
+      return 700; // default for desktop
+   };
 
    const onPrev = () => {
       containerRef.current.scrollBy({
-         left: -scrollAmount,
+         left: -getScrollAmount(),
          behavior: "smooth",
       });
       setActive("prev");
@@ -47,11 +25,18 @@ export default function Cases() {
 
    const onNext = () => {
       containerRef.current.scrollBy({
-         left: scrollAmount,
+         left: getScrollAmount(),
          behavior: "smooth",
       });
       setActive("next");
    };
+
+   const casesData = [
+      { link: "/project-1", img: "/img/netdev.png", title: "Parfoa", type: "E-Shop" },
+      { link: "/project-2", img: "/img/netdev.png", title: "Otpan news", type: "E-commerce" },
+      { link: "/project-3", img: "/img/netdev.png", title: "NetDev.kz", type: "Mobile App" },
+      { link: "/project-4", img: "/img/netdev.png", title: "Another Project", type: "Web App" },
+   ];
 
    return (
       <section id="cases">

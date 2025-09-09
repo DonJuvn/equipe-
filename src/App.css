@@ -1068,7 +1068,7 @@ button {
       padding: 15px 22px;
       border-radius: 30px;
    }
-   .phase .tablet img{
+   .phase .tablet img {
       width: 48px;
    }
    .phase h1 {
@@ -1092,11 +1092,6 @@ button {
    max-height: fit-content;
    border-radius: 30px;
    background-color: #232324;
-}
-@media screen and (min-width: 1600px) {
-   .feedback {
-      width: 26vw; /* each case takes full container width */
-   }
 }
 .feedback .container {
    padding: 2vh 0;
@@ -1161,6 +1156,19 @@ button {
    letter-spacing: 100%;
    margin-top: 2vh;
 }
+@media screen and (min-width: 1600px) {
+   .feedback {
+      width: 26vw; /* each case takes full container width */
+   }
+}
+@media screen and (max-width: 768px) {
+   #feedbacks {
+      padding-top: 4vh;
+   }
+   .feedback {
+      width: 90vw;
+   }
+}
 
 /* APPLICATION */
 #application {
@@ -1222,6 +1230,47 @@ button {
    position: absolute;
    right: 0;
    top: 0;
+}
+
+@media screen and (max-width: 768px) {
+   #application {
+      padding-top: 4vh;
+   }
+   .application {
+      margin-top: 2vh;
+      flex-direction: column;
+      gap: 1vh;
+   }
+   #soc-media {
+      width: 100%;
+   }
+   #soc-media .container {
+      height: 100%;
+   }
+   #soc-media .logo {
+      margin-top: 3vh;
+      gap: 1vh;
+   }
+   #soc-media p {
+      font-size: 16px;
+   }
+   #soc-media .media {
+      gap: 0.75vh;
+      margin-top: 4vh;
+      margin-bottom: 2vh;
+   }
+   #soc-media .title:hover {
+      background-color: #2b2b2c;
+   }
+   #soc-media .title:hover .blue-point {
+      background-color: #4989f1;
+   }
+   #soc-media #group {
+      position: absolute;
+      right: 0;
+      width: 230px;
+      top: 0;
+   }
 }
 
 /* Form0 */
@@ -1320,6 +1369,39 @@ button {
    font-size: 1.5rem;
    cursor: pointer;
    background-color: #2b2b2c;
+}
+
+@media screen and (max-width: 768px) {
+   #form {
+      padding: 3vh 0;
+      width: 100%;
+   }
+   #form h2 {
+      font-size: 20px;
+      line-height: 135%;
+      width: 100%;
+   }
+   #form form {
+      gap: 1vh;
+   }
+   #form form div {
+      padding: 1.25vh 0;
+   }
+   #form form input {
+      font-size: 18px;
+   }
+   #form button {
+      font-size: 18px;
+      padding: 1.5vh 0;
+      margin-top: 1vh;
+   }
+   .form-wrapper {
+      width: 90%;
+      margin: auto;
+   }
+   .form-wrapper .close-btn {
+      font-size: 1rem;
+   }
 }
 
 /* FOOTE0R */

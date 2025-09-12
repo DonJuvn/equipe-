@@ -834,6 +834,7 @@ button {
 /* CASES */
 #cases {
    padding-top: 140px;
+   margin-bottom: 140px;
 }
 .cases-title {
    display: flex;
@@ -936,6 +937,7 @@ button {
 @media screen and (max-width: 768px) {
    #cases {
       padding-top: 4vh;
+      margin-bottom: 4vh;
    }
    .cases-title {
       margin-bottom: 2vh;
@@ -984,7 +986,7 @@ button {
 }
 /* PROCESS */
 #process {
-   padding-top: 140px;
+   padding-top: 0;
 }
 .phases {
    margin-top: 4vh;
@@ -1056,7 +1058,7 @@ button {
 
 @media screen and (max-width: 768px) {
    #process {
-      padding-top: 4vh;
+      padding-top: 0;
    }
    .phases {
       margin-top: 2vh;

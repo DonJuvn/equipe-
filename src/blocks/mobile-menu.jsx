@@ -24,19 +24,19 @@ const MobileMenu = ({ isOpen, onClose }) => {
                   </div>
                   <div onClick={onClose} className="navigation">
                      <a id="span">(03)</a>
-                     <a href="#case">Кейс</a>
+                     <a href="#cases">Кейс</a>
                   </div>
                   <div onClick={onClose} className="navigation">
                      <a id="span">(04)</a>
-                     <a href="#how">Как мы работаем</a>
+                     <a href="#process">Как мы работаем</a>
                   </div>
                   <div onClick={onClose} className="navigation">
                      <a id="span">(05)</a>
-                     <a href="#review">Отзыв</a>
+                     <a href="#feedbacks">Отзыв</a>
                   </div>
                   <div onClick={onClose} className="navigation">
                      <a id="span">(06)</a>
-                     <a href="#contacts">Контакты</a>
+                     <a href="#application">Контакты</a>
                   </div>
                </nav>
 

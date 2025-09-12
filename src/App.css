@@ -573,7 +573,7 @@ button {
 
 /* ABOUT */
 #about {
-   padding-top: 8vh;
+   padding-top: 140px;
 }
 #about h1 {
    color: white;
@@ -674,7 +674,7 @@ button {
 
 /* SERVICES */
 #services {
-   padding-top: 8vh;
+   padding-top: 140px;
 }
 #services .container {
    height: 100%;
@@ -833,7 +833,7 @@ button {
 
 /* CASES */
 #cases {
-   padding-top: 8vh;
+   padding-top: 140px;
 }
 .cases-title {
    display: flex;
@@ -984,7 +984,7 @@ button {
 }
 /* PROCESS */
 #process {
-   padding-top: 8vh;
+   padding-top: 140px;
 }
 .phases {
    margin-top: 4vh;
@@ -1041,6 +1041,8 @@ button {
    letter-spacing: 0%;
    text-align: center;
    vertical-align: bottom;
+   width: 50vw;
+   margin: 0 auto;
 }
 .phases .reveal {
    opacity: 0;
@@ -1085,7 +1087,7 @@ button {
 
 /* FEEDBACKS */
 #feedbacks {
-   padding-top: 8vh;
+   padding-top: 140px;
 }
 .feedback {
    flex: 0 0 auto; /* prevents shrinking, keeps items side by side */
@@ -1175,7 +1177,7 @@ button {
 
 /* APPLICATION */
 #application {
-   padding-top: 8vh;
+   padding-top: 140px;
 }
 .application {
    margin-top: 4vh;

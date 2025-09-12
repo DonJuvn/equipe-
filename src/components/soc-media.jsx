@@ -9,11 +9,17 @@ export default function SocMedia() {
             </div>
 
             <div className="media">
-               <Title text={"instagram"} />
-               <Title text={"whatsapp"} />
-               <Title text={"linked in"} />
+               <a href="https://www.instagram.com/equipe_teaam/">
+                  <Title text={"instagram"} />
+               </a>
+               <a href="https://wa.me/77077545662?text=Сәлеметсіз%20бе,%20сіздерге%20проект%20жасатқым%20келеді.">
+                  <Title text={"whatsapp"} />
+               </a>
+               <a href="https://www.linkedin.com/company/equipe-team/">
+                  <Title text={"linked in"} />
+               </a>
             </div>
-            <img id='group' src="./img/Group.png" alt="" />
+            <img id="group" src="./img/Group.png" alt="" />
          </div>
       </div>
    );

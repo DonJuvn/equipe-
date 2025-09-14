@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ContactForm() {
+export default function ContactForm({ onClose }) {
    return (
       <div id="form">
          <div className="container">
@@ -9,6 +9,13 @@ export default function ContactForm() {
             <form 
                action="https://getform.io/f/bvrmprzb" 
                method="POST"
+               onSubmit={() => {
+                  // Закрыть модалку после отправки
+                  if (onClose) {
+                     setTimeout(onClose, 500); 
+                     // задержка нужна, чтобы форма успела отправиться
+                  }
+               }}
             >
                <div>
                   <input 
